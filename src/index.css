@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200;300;400;500;600;700;800&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -18,4 +19,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.font-primary {
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+.font-secondary {
+  font-family: Arial, Helvetica, sans-serif
 }
