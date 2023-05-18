@@ -99,8 +99,8 @@ export default function Header() {
             <Button href="https://github.com/ruskpr" type={ButtonType.Link}>
               <a href="https://github.com/ruskpr" className="hidden lg:block">
                 Github Profile
+                <BsGithub className="text-4xl lg:text-lg ml-1" />
               </a>
-              <BsGithub className="text-4xl lg:text-lg ml-1" />
             </Button>
 
             {/* mobile menu button */}
