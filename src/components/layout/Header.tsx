@@ -71,11 +71,11 @@ export default function Header() {
           <a href="/" className="flex items-center">
             <Logo />
             <span
-              className="font-primary text-white font-bold self-center text-xl ml-2
+              className="font-primary text-white font-bold self-center text-3xl lg:text-xl ml-2
              hover:text-transparent bg-clip-text bg-gradient-to-l from-white via-purple-300 to-pink-700
              transition-all"
             >
-              Russ Koprulu
+              Russ <span className="hidden sm:inline">Koprulu</span>
             </span>
           </a>
 
@@ -90,7 +90,7 @@ export default function Header() {
           <div className="flex items-center lg:order-2">
             <Button href="https://github.com/ruskpr" type={ButtonType.Link}>
               <span className="hidden lg:block">Github Profile</span>
-              <BsGithub className="text-md ml-1" />
+              <BsGithub className="text-5xl lg:text-lg ml-1" />
             </Button>
 
             {/* mobile menu button */}
@@ -99,7 +99,7 @@ export default function Header() {
                 type={ButtonType.Link}
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
-                <BsList className="text-lg" />
+                <BsList className="text-6xl lg:text-lg" />
               </Button>
 
               <MobileMenuModal show={isMenuOpen} setShow={setIsMenuOpen}>
