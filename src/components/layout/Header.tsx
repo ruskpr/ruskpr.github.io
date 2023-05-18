@@ -1,17 +1,14 @@
 import { useState, useEffect } from "react";
-import { Button, ButtonType, ButtonSize } from "../ui/Button";
+import { Button, ButtonType } from "../ui/Button";
 import Logo from "../ui/Logo";
 import { BsGithub, BsList } from "react-icons/bs";
 import { MobileMenuModal } from "../utilities/MobileMenuModal";
+import { Link } from "react-router-dom";
 
 //icon imports
-// home icon
 import { MdHome } from "react-icons/md";
-// projects icon
 import { FaProjectDiagram } from "react-icons/fa";
-// about me icon
 import { MdPerson } from "react-icons/md";
-// contact icon
 import { MdEmail } from "react-icons/md";
 
 export default function Header() {
@@ -32,28 +29,36 @@ export default function Header() {
   const navItems = (
     <>
       <li>
-        <Button className={btnStyles} href="/" type={ButtonType.Link}>
-          <MdHome className="mr-1" />
-          Home
-        </Button>
+        <Link to="/">
+          <Button className={btnStyles} type={ButtonType.Link}>
+            <MdHome className="mr-1" />
+            Home
+          </Button>
+        </Link>
       </li>
       <li>
-        <Button className={btnStyles} href="/" type={ButtonType.Link}>
-          <FaProjectDiagram className="mr-1" />
-          Projects
-        </Button>
+        <Link to="/projects">
+          <Button className={btnStyles} href="/" type={ButtonType.Link}>
+            <FaProjectDiagram className="mr-1" />
+            Projects
+          </Button>
+        </Link>
       </li>
       <li>
-        <Button className={btnStyles} href="/" type={ButtonType.Link}>
-          <MdPerson className="mr-1" />
-          About Me
-        </Button>
+        <Link to="/about">
+          <Button className={btnStyles} href="/" type={ButtonType.Link}>
+            <MdPerson className="mr-1" />
+            About Me
+          </Button>
+        </Link>
       </li>
       <li>
-        <Button className={btnStyles} href="/" type={ButtonType.Link}>
-          <MdEmail className="mr-1" />
-          Contact
-        </Button>
+        <Link to="/contact">
+          <Button className={btnStyles} href="/" type={ButtonType.Link}>
+            <MdEmail className="mr-1" />
+            Contact
+          </Button>
+        </Link>
       </li>
     </>
   );
