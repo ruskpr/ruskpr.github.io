@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
-import { Button, ButtonType, ButtonSize } from "../ui/Button";
+import { Button, ButtonType } from "../ui/Button";
 
 const BackToTop = () => {
   const [visible, setVisible] = useState(false);
@@ -32,7 +32,7 @@ const BackToTop = () => {
   return (
     <div className={dynamicStyles} onClick={scrollToTop}>
       <Button type={ButtonType.Link}>
-        <FaArrowCircleUp className="text-3xl"/>
+        <FaArrowCircleUp className="text-3xl" />
       </Button>
     </div>
   );

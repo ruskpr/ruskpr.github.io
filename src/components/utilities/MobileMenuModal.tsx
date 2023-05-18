@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import { Button, ButtonType } from "../ui/Button";
-import { MdClose } from "react-icons/md";
+//import { Button, ButtonType } from "../ui/Button";
+//import { MdClose } from "react-icons/md";
 
 // create modal props interface
 interface ModalProps {
@@ -15,7 +15,7 @@ export function MobileMenuModal(props: ModalProps) {
   const modalContent = useRef(null);
 
   const clickHandler = (e: HTMLElement) => {
-    if (!show || modalContent.current == e) return;
+    if (!show || modalContent.current === e) return;
     setShow(false);
   };
 
