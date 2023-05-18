@@ -25,38 +25,46 @@ export default function Header() {
       });
   });
 
-  const btnStyles = "text-4xl lg:text-sm";
+  const btnStyles = "flex text-5xl md:text-4xl lg:text-sm";
   const navItems = (
     <>
       <li>
         <Link to="/">
-          <Button className={btnStyles} type={ButtonType.Link}>
-            <MdHome className="mr-1" />
-            Home
+          <Button type={ButtonType.Link}>
+            <div className={btnStyles}>
+              <MdHome className="mr-1" />
+              Home
+            </div>
           </Button>
         </Link>
       </li>
       <li>
         <Link to="/projects">
-          <Button className={btnStyles} href="/" type={ButtonType.Link}>
-            <FaProjectDiagram className="mr-1" />
-            Projects
+          <Button href="/" type={ButtonType.Link}>
+            <div className={btnStyles}>
+              <FaProjectDiagram className="mr-1" />
+              Projects
+            </div>
           </Button>
         </Link>
       </li>
       <li>
         <Link to="/about">
-          <Button className={btnStyles} href="/" type={ButtonType.Link}>
-            <MdPerson className="mr-1" />
-            About Me
+          <Button href="/" type={ButtonType.Link}>
+            <div className={btnStyles}>
+              <MdPerson className="mr-1" />
+              About Me
+            </div>
           </Button>
         </Link>
       </li>
       <li>
         <Link to="/contact">
-          <Button className={btnStyles} href="/" type={ButtonType.Link}>
-            <MdEmail className="mr-1" />
-            Contact
+          <Button href="/" type={ButtonType.Link}>
+            <div className={btnStyles}>
+              <MdEmail className="mr-1" />
+              Contact
+            </div>
           </Button>
         </Link>
       </li>
@@ -71,7 +79,7 @@ export default function Header() {
           <a href="/" className="flex items-center">
             <Logo />
             <span
-              className="font-primary text-white font-bold self-center text-3xl lg:text-xl ml-2
+              className="font-primary text-white font-bold self-center text-4xl lg:text-xl ml-2
              hover:text-transparent bg-clip-text bg-gradient-to-l from-white via-purple-300 to-pink-700
              transition-all"
             >
@@ -89,8 +97,10 @@ export default function Header() {
           {/* right header (github link + mobile menu) */}
           <div className="flex items-center lg:order-2">
             <Button href="https://github.com/ruskpr" type={ButtonType.Link}>
-              <span className="hidden lg:block">Github Profile</span>
-              <BsGithub className="text-5xl lg:text-lg ml-1" />
+              <a href="https://github.com/ruskpr" className="hidden lg:block">
+                Github Profile
+              </a>
+              <BsGithub className="text-4xl lg:text-lg ml-1" />
             </Button>
 
             {/* mobile menu button */}
@@ -99,11 +109,11 @@ export default function Header() {
                 type={ButtonType.Link}
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
-                <BsList className="text-6xl lg:text-lg" />
+                <BsList className="text-5xl lg:text-lg" />
               </Button>
 
               <MobileMenuModal show={isMenuOpen} setShow={setIsMenuOpen}>
-                <ul className="flex flex-col gap-5">{navItems}</ul>
+                <ul className="flex flex-col gap-10">{navItems}</ul>
               </MobileMenuModal>
             </div>
           </div>

@@ -4,7 +4,7 @@ export default function Logo() {
     <img
       src="/logo-design-round.png"
       alt="logo"
-      className="w-8 h-8 rounded-full"
+      className="w-12 h-12 lg:w-8 lg:h-8 rounded-full"
     />
   );
 }

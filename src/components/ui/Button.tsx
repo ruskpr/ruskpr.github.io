@@ -66,13 +66,7 @@ export const Button = (props: ButtonProps) => {
         className
       }
     >
-      {href ? (
-        <a href={href} className="flex items-center">
-          {children}
-        </a>
-      ) : (
-        children
-      )}
+      {children}
     </button>
   );
 };
