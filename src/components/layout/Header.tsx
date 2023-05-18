@@ -19,37 +19,38 @@ export default function Header() {
 
   useEffect(() => {
     window.addEventListener("resize", () => {
-      setIsMenuOpen(false);
+      //setIsMenuOpen(false);
     });
 
     return () =>
       window.removeEventListener("resize", () => {
-        setIsMenuOpen(false);
+        //setIsMenuOpen(false);
       });
   });
 
+  const btnStyles = "text-4xl lg:text-sm";
   const navItems = (
     <>
       <li>
-        <Button href="/" type={ButtonType.Link}>
+        <Button className={btnStyles} href="/" type={ButtonType.Link}>
           <MdHome className="mr-1" />
           Home
         </Button>
       </li>
       <li>
-        <Button href="/" type={ButtonType.Link}>
+        <Button className={btnStyles} href="/" type={ButtonType.Link}>
           <FaProjectDiagram className="mr-1" />
           Projects
         </Button>
       </li>
       <li>
-        <Button href="/" type={ButtonType.Link}>
+        <Button className={btnStyles} href="/" type={ButtonType.Link}>
           <MdPerson className="mr-1" />
           About Me
         </Button>
       </li>
       <li>
-        <Button href="/" type={ButtonType.Link}>
+        <Button className={btnStyles} href="/" type={ButtonType.Link}>
           <MdEmail className="mr-1" />
           Contact
         </Button>
@@ -97,9 +98,7 @@ export default function Header() {
               </Button>
 
               <MobileMenuModal show={isMenuOpen} setShow={setIsMenuOpen}>
-                <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:mt-0">
-                  {navItems}
-                </ul>
+                <ul className="flex flex-col gap-5">{navItems}</ul>
               </MobileMenuModal>
             </div>
           </div>
