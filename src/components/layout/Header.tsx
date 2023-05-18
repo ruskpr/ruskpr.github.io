@@ -25,7 +25,7 @@ export default function Header() {
       });
   });
 
-  const btnStyles = "flex text-5xl md:text-4xl lg:text-sm";
+  const btnStyles = "flex items-center text-5xl md:text-4xl lg:text-sm";
   const navItems = (
     <>
       <li>
@@ -81,7 +81,7 @@ export default function Header() {
             <span
               className="font-primary text-white font-bold self-center text-4xl lg:text-xl ml-2
              hover:text-transparent bg-clip-text bg-gradient-to-l from-white via-purple-300 to-pink-700
-             transition-all"
+             transition-background duration-500"
             >
               Russ <span className="hidden sm:inline">Koprulu</span>
             </span>
@@ -97,8 +97,8 @@ export default function Header() {
           {/* right header (github link + mobile menu) */}
           <div className="flex items-center lg:order-2">
             <Button href="https://github.com/ruskpr" type={ButtonType.Link}>
-              <a href="https://github.com/ruskpr" className="hidden lg:block">
-                Github Profile
+              <a href="https://github.com/ruskpr" className="flex">
+                <span className="hidden lg:inline">Github Profile</span>
                 <BsGithub className="text-4xl lg:text-lg ml-1" />
               </a>
             </Button>
