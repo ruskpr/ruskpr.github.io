@@ -5,13 +5,12 @@ import { MdClose } from "react-icons/md";
 // create modal props interface
 interface ModalProps {
   children?: React.ReactNode;
-  id?: string;
   show: boolean;
   setShow: (show: boolean) => void;
 }
 
 export function MobileMenuModal(props: ModalProps) {
-  const { children, id, show, setShow } = props;
+  const { children, show, setShow } = props;
 
   const modalContent = useRef(null);
 
@@ -42,28 +41,28 @@ export function MobileMenuModal(props: ModalProps) {
       {/* Modal backdrop */}
       <div
         onClick={() => setShow(false)}
-        className="fixed inset-0 z-50 bg-dark bg-opacity-75 transition-opacity backdrop-blur-sm"
+        className="fixed inset-0 z-50 bg-black bg-opacity-30 backdrop-blur-sm"
         aria-hidden="true"
       />
 
       {/* Modal context */}
       <div
-        id={id}
-        className="fixed inset-0 z-50 overflow-hidden flex items-center justify-center transform px-4 sm:px-6"
+        onClick={() => setShow(false)}
+        className="fixed inset-0 z-50 overflow-hidden flex items-center justify-center px-4 sm:px-6"
         role="dialog"
         aria-modal="true"
       >
-        {/* close button (X) */}
-        <div className="fixed top-3 left-1/2 z-50 -translate-x-1/2">
+        {/* close button (X)
+        <div className="fixed top-0 left-1/2 z-50 -translate-x-1/2">
           <Button onClick={() => setShow(false)} type={ButtonType.Link}>
-            <MdClose className="text-white" />
+            <MdClose className="text-white text-5xl" />
           </Button>
-        </div>
+        </div> */}
         <div
           className="flex justify-center overflow-auto max-w-6xl w-full max-h-full"
           ref={modalContent}
         >
-          {children}
+          <div className="border border-transparent">{children}</div>
         </div>
       </div>
     </div>
