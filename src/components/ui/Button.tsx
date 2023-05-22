@@ -47,7 +47,7 @@ export const Button = (props: ButtonProps) => {
   const defaultStyles =
     "flex items-center text-sm font-primary font-bold text-white font-medium rounded-md";
   const hoverTransition = animate
-    ? "transition duration-75 ease-in-out hover:shadow-lg hover:scale-105"
+    ? "transition duration-100 ease-in-out hover:shadow-lg hover:scale-105"
     : "";
 
   return (
