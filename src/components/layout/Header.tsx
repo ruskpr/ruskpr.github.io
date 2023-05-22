@@ -16,12 +16,12 @@ export default function Header() {
 
   useEffect(() => {
     window.addEventListener("resize", () => {
-      //setIsMenuOpen(false);
+      setIsMenuOpen(false);
     });
 
     return () =>
       window.removeEventListener("resize", () => {
-        //setIsMenuOpen(false);
+        setIsMenuOpen(false);
       });
   });
 
@@ -30,7 +30,7 @@ export default function Header() {
     <>
       <li>
         <Link to="/">
-          <Button type={ButtonType.Link}>
+          <Button type={ButtonType.Link} animate={false}>
             <div className={btnStyles}>
               <MdHome className="mr-1" />
               Home
@@ -40,7 +40,7 @@ export default function Header() {
       </li>
       <li>
         <Link to="/projects">
-          <Button href="/" type={ButtonType.Link}>
+          <Button href="/" type={ButtonType.Link} animate={false}>
             <div className={btnStyles}>
               <FaProjectDiagram className="mr-1" />
               Projects
@@ -50,7 +50,7 @@ export default function Header() {
       </li>
       <li>
         <Link to="/about">
-          <Button href="/" type={ButtonType.Link}>
+          <Button href="/" type={ButtonType.Link} animate={false}>
             <div className={btnStyles}>
               <MdPerson className="mr-1" />
               About Me
@@ -60,7 +60,7 @@ export default function Header() {
       </li>
       <li>
         <Link to="/contact">
-          <Button href="/" type={ButtonType.Link}>
+          <Button href="/" type={ButtonType.Link} animate={false}>
             <div className={btnStyles}>
               <MdEmail className="mr-1" />
               Contact
@@ -73,10 +73,10 @@ export default function Header() {
 
   return (
     <header className="container mx-auto">
-      <nav className="px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+      <nav className="px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center">
           {/* left header (logo) */}
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <Logo />
             <span
               className="font-primary text-white font-bold self-center text-4xl lg:text-xl ml-2
@@ -85,7 +85,7 @@ export default function Header() {
             >
               Russ <span className="hidden sm:inline">Koprulu</span>
             </span>
-          </a>
+          </Link>
 
           {/* middle header (nav links) */}
           <div className="hidden justify-between lg:flex items-center">
@@ -96,17 +96,26 @@ export default function Header() {
 
           {/* right header (github link + mobile menu) */}
           <div className="flex items-center lg:order-2">
-            <Button href="https://github.com/ruskpr" type={ButtonType.Link}>
-              <a href="https://github.com/ruskpr" className="flex">
+            <Button
+              href="https://github.com/ruskpr"
+              type={ButtonType.Link}
+              animate={false}
+            >
+              <Link
+                target="_blank"
+                to="https://github.com/ruskpr"
+                className="flex"
+              >
                 <span className="hidden lg:inline">Github Profile</span>
                 <BsGithub className="text-4xl lg:text-lg ml-1" />
-              </a>
+              </Link>
             </Button>
 
             {/* mobile menu button */}
             <div className="block lg:order-3 lg:hidden">
               <Button
                 type={ButtonType.Link}
+                animate={false}
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 <BsList className="text-5xl lg:text-lg" />
