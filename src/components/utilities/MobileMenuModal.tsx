@@ -37,7 +37,7 @@ export function MobileMenuModal(props: ModalProps) {
   });
 
   return (
-    <div className={`${show ? "fixed" : "hidden"}`}>
+    <div className={`${show ? "fixed z-50" : "hidden"}`}>
       {/* Modal backdrop */}
       <div
         onClick={() => setShow(false)}

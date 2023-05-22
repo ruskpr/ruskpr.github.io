@@ -30,6 +30,7 @@ export enum ButtonSize {
   md = "py-1 px-3 text-lg",
   lg = "py-1 px-4 text-xl",
   xl = "py-2 px-6 text-3xl",
+  xxl = "py-2 px-6 text-6xl",
 }
 
 // create a button component
