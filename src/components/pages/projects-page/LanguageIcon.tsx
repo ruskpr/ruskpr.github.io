@@ -5,6 +5,7 @@ import {
   SiReact,
   SiRedux,
   SiCsharp,
+  SiBlazor
 } from "react-icons/si";
 
 const getLanguageIcon = (language: string) => {
@@ -28,6 +29,8 @@ const getLanguageIcon = (language: string) => {
     case "c#":
     case "csharp":
       return <SiCsharp className="text-green-500" />;
+    case "blazor":
+      return <SiBlazor className="text-indigo-400" />;
     default:
       throw new Error(`Language '${language}' not found`);
   }

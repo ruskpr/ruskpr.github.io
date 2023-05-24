@@ -6,7 +6,7 @@ type Props = {
 };
 export default function ProjectCardContainer({ className, children }: Props) {
   return (
-    <div className={className ? className : "flex gap-6 flex-wrap"}>
+    <div className={className ? className : "flex flex-wrap justify-center "}>
       {children}
     </div>
   );
