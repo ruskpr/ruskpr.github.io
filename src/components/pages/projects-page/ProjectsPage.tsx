@@ -17,7 +17,7 @@ export default function ProjectsPage() {
     return <ProjectCard project={proj} key={proj.id} />;
   });
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center">
+    <div className="w-full h-full flex flex-col justify-center items-center pb-64">
       <h1 className="text-4xl font-bold text-white mt-16 mb-48">Projects</h1>
 
       <ProjectCardContainer>{renderedProjectCards}</ProjectCardContainer>
