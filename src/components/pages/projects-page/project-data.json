@@ -1,0 +1,47 @@
+[
+    {
+        "id": 0,
+        "title": "SQL / LINQ examples",
+        "subtitle": "A collection of examples of using LINQ in C#",
+        "description": "desc",
+        "description2": null,
+        "description3": null,
+        "images": [
+            "https://github.com/ruskpr/csharp-sql-linq-examples/blob/main/Images/home.png?raw=true",
+            "https://github.com/ruskpr/csharp-sql-linq-examples/blob/main/Images/example-query.png?raw=true"
+        ],
+        "tags": [
+            "SQLite",
+            "SQLServer",
+            "WPF",
+            ".NET"
+        ],
+        "links": {
+            "github": "https://github.com/ruskpr",
+            "website": "www.github.com/ruskpr"
+        },
+        "languages": [
+            "C#"
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Chess",
+        "subtitle": "A chess engine written in C# which include sample applications",
+        "description": "desc",
+        "description2": null,
+        "description3": null,
+        "images": [],
+        "tags": [
+            ".NET",
+            "UDP Multiplayer"
+        ],
+        "links": {
+            "github": null,
+            "website": null
+        },
+        "languages": [
+            "C#"
+        ]
+    }
+]
