@@ -1,5 +1,5 @@
 import Header from "./components/layout/Header";
-import AppRouter from "./AppRouter";
+import AppRouter from "./components/layout/AppRouter";
 
 function App() {
   return (

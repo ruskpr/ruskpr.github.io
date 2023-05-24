@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 
 // page components
-import ContactPage from "./components/pages/contact-page/ContactPage";
-import HomePage from "./components/pages/home-page/HomePage";
-import ProjectsPage from "./components/pages/projects-page/ProjectsPage";
-import AboutPage from "./components/pages/about-page/AboutPage";
+import ContactPage from "../pages/contact-page/ContactPage";
+import HomePage from "../pages/home-page/HomePage";
+import ProjectsPage from "../pages/projects-page/ProjectsPage";
+import AboutPage from "../pages/about-page/AboutPage";
 
 export default function AppRouter() {
   return (
