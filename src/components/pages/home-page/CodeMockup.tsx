@@ -2,12 +2,10 @@ import { Button, ButtonType, ButtonSize } from "../../ui/Button";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-let noPressed = false;
-
 export default function CodeMockup() {
   const navigate = useNavigate();
 
-  const codeTextTarget = `npm i ruskpr-projects`;
+  const codeTextTarget: string = `install ruskpr-projects`;
   const [state, setState] = useState({
     showHtml1: false,
     showHtml2: false,
@@ -35,8 +33,10 @@ export default function CodeMockup() {
       });
     }, 6000);
 
-    return () => clearTimeout(timer1);
-    return () => clearTimeout(timer2);
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
   }, []);
 
   const handleYesClicked = () => {
