@@ -1,8 +1,9 @@
 [
     {
         "id": 0,
+        "slug": "linq-sql-examples",
         "title": "SQL / LINQ examples",
-        "subtitle": "A collection of examples of using LINQ in C#",
+        "subtitle": "A collection of examples demonstrate Language Integrated Query (LINQ) in C#.",
         "description": "desc",
         "description2": null,
         "description3": null,
@@ -13,6 +14,7 @@
         "tags": [
             "SQLite",
             "SQLServer",
+            "LINQ",
             "WPF",
             ".NET"
         ],
@@ -26,15 +28,17 @@
     },
     {
         "id": 1,
+        "slug": "chess",
         "title": "Chess",
-        "subtitle": "A chess engine written in C# which include sample applications",
+        "subtitle": "A chess engine written in C#. Includes sample applications.",
         "description": "desc",
         "description2": null,
         "description3": null,
         "images": [],
         "tags": [
             ".NET",
-            "UDP Multiplayer"
+            "UDP Multiplayer",
+            "AI Algorithms"
         ],
         "links": {
             "github": null,
@@ -42,6 +46,34 @@
         },
         "languages": [
             "C#"
+        ]
+    },
+    {
+        "id": 2,
+        "slug": "marketio",
+        "title": "market.io",
+        "subtitle": "A web application for buying and selling items.",
+        "description": "desc",
+        "description2": null,
+        "description3": null,
+        "images": [
+            "https://github.com/ruskpr/marketio/blob/main/images/listings.png?raw=true",
+            "https://github.com/ruskpr/marketio/blob/main/images/listing-detail-page.png?raw=true",
+            "https://github.com/ruskpr/marketio/blob/main/images/home.png?raw=true",
+            "https://github.com/ruskpr/marketio/blob/main/images/user-profile.png?raw=true"
+        ],
+        "tags": [
+            "Blazor",
+            "ASP.NET Core",
+            "Web API"
+        ],
+        "links": {
+            "github": "https://github.com/ruskpr",
+            "website": "www.github.com/ruskpr"
+        },
+        "languages": [
+            "C#",
+            "blazor"
         ]
     }
 ]

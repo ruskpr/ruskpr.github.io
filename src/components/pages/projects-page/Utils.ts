@@ -2,6 +2,7 @@ import data from "./project-data.json";
 
 export interface IProjectData {
     id: number; // required
+    slug: string; // required
     title: string; // required
     subtitle: string; // required
     description: string; // required
@@ -23,6 +24,7 @@ export const getDataFromFile = () => {
     data.forEach((project: any) => {
         const newProject: IProjectData = {
             id: project.id, 
+            slug: project.slug, 
             title: project.title,
             subtitle: project.subtitle,
             description: project.description,
@@ -36,6 +38,13 @@ export const getDataFromFile = () => {
         projectData.push(newProject);
     });
     return projectData;
+}
+
+
+export const getProjectDataBySlug = (slug: string | undefined) => {
+    const projectData = getDataFromFile();
+    const project = projectData.find((project) => project.slug === slug);
+    return project;
 }
 
 
