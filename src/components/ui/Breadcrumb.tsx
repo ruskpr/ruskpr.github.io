@@ -4,7 +4,7 @@ export default function Breadcrumb(props: {
 }) {
   return (
     <div
-      className={`text-sm breadcrumbs p-8 pl-8 ${
+      className={`overflow-hidden text-sm breadcrumbs p-8 pl-8 ${
         props.className ? props.className : ""
       }`}
     >
