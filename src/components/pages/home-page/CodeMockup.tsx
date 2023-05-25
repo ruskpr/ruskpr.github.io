@@ -68,7 +68,7 @@ export default function CodeMockup() {
             <code className="flex items-center">
               View projects? [
               <Button
-                type={ButtonType.Secondary}
+                type={ButtonType.Primary}
                 size={ButtonSize.lg}
                 onClick={handleYesClicked}
               >
@@ -76,7 +76,7 @@ export default function CodeMockup() {
               </Button>
               /
               <Button
-                type={ButtonType.Secondary}
+                type={ButtonType.Primary}
                 size={ButtonSize.lg}
                 onClick={handleNoClicked}
               >
