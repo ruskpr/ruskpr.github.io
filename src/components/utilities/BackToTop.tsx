@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { FaArrowCircleUp } from "react-icons/fa";
+import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import { Button, ButtonType } from "../ui/Button";
 
 const BackToTop = () => {
   const [visible, setVisible] = useState(false);
 
-  const MIN_SCROLL_AMOUNT = 10;
+  const MIN_SCROLL_AMOUNT = 150;
 
   const toggleVisible = () => {
     const current_scroll_val = document.documentElement.scrollTop;
@@ -27,12 +27,12 @@ const BackToTop = () => {
 
   window.addEventListener("scroll", toggleVisible);
 
-  const dynamicStyles = visible ? "fixed bottom-3 right-3 z-50" : "hidden";
+  const dynamicStyles = visible ? "fixed bottom-4 right-3 z-50" : "hidden";
 
   return (
     <div className={dynamicStyles} onClick={scrollToTop}>
       <Button type={ButtonType.Link}>
-        <FaArrowCircleUp className="text-3xl" />
+        <BsFillArrowUpSquareFill className="text-5xl lg:text-7xl opacity-40 text-gray-200" />
       </Button>
     </div>
   );

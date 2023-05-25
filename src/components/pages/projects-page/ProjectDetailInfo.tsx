@@ -6,13 +6,13 @@ export default function ProjectDetailInfo(props: {
   const data = props.projectData;
 
   return (
-    <article className="prose w-full text-gray-300">
-      <h1 className="hidden lg:block text-white font-primary text-5xl">
+    <article className="text-gray-300">
+      <h1 className="hidden lg:block text-white font-primary font-bold text-5xl mb-6">
         {data.title}
       </h1>
-      <p className="text-xl">{data.description}</p>
-      {data.description2 && <p className="text-xl">{data.description2}</p>}
-      {data.description3 && <p className="text-xl">{data.description3}</p>}
+      <p className="text-xl">{data.description}</p><br/>
+      {data.description2 && <p className="text-xl">{data.description2}</p>}<br/>
+      {data.description3 && <p className="text-xl">{data.description3}</p>}<br/>
     </article>
   );
 }

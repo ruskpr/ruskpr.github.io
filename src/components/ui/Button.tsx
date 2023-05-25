@@ -13,15 +13,15 @@ interface ButtonProps {
 
 // create an enum for button types
 export enum ButtonType {
-  Primary = "bg-red-400 hover:bg-red-500",
-  Secondary = "bg-indigo-500 hover:bg-indigo-700",
+  Primary = "bg-indigo-700 hover:bg-indigo-800",
+  Secondary = "bg-red-400 hover:bg-red-500",
   Success = "bg-green-500 hover:bg-green-700",
   Danger = "bg-rose-800 hover:bg-rose-900",
   Warning = "bg-yellow-500 hover:bg-yellow-600",
   Info = "bg-cyan-400 hover:bg-cyan-300",
   Light = "bg-gray-200 hover:bg-gray-300 text-gray-600",
   Dark = "bg-gray-700 hover:bg-gray-900",
-  Link = "font-extralight text-white bg-transparent hover:text-red-300 hover:shadow-none",
+  Link = "font-extralight text-white bg-transparent hover:text-indigo-300 hover:shadow-none",
 }
 
 export enum ButtonSize {

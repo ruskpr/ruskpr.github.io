@@ -5,6 +5,8 @@ import Error404Page from "../404/404";
 import ProjectDetailCarousel from "./ProjectDetailCarousel";
 import ProjectDetailSidebar from "./ProjectDetailSidebar";
 import ProjectDetailInfo from "./ProjectDetailInfo";
+import { Button, ButtonType } from "../../ui/Button";
+import Breadcrumb from "../../ui/Breadcrumb";
 
 export default function ProjectDetailPage() {
   let { slug } = useParams();
@@ -15,9 +17,9 @@ export default function ProjectDetailPage() {
   }
 
   return (
-    <div className="px-8 pt-8 pb-64">
+    <div className="pb-32">
       {/* breadcrumb */}
-      <div className="text-sm breadcrumbs p-8 pl-16">
+      <Breadcrumb>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -25,14 +27,29 @@ export default function ProjectDetailPage() {
           <li>
             <Link to="/projects">Projects</Link>
           </li>
-          <li>{projectData.title}</li>
+          <li>
+            <Link to={`/projects/${projectData.slug}`}>
+              {projectData.title}
+            </Link>
+          </li>
         </ul>
-      </div>
-      <div className="flex flex-col lg:flex-row gap-8 p-0 lg:p-8 mb-8">
+      </Breadcrumb>
+      <div className="flex flex-col lg:flex-row gap-4 p-0 lg:p-8 mb-8">
         <ProjectDetailCarousel projectImages={projectData.images} />
         <ProjectDetailSidebar projectData={projectData} />
       </div>
-      <ProjectDetailInfo projectData={projectData} />
+
+      <div className="px-8 w-full">
+        <ProjectDetailInfo projectData={projectData} />
+      </div>
+
+      <div className="flex justify-center items-center mt-24">
+        <Button type={ButtonType.Primary}>
+          <Link className="text-xl" to="/projects">
+            Back to projects
+          </Link>
+        </Button>
+      </div>
     </div>
   );
 }

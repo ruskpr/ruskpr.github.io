@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { IProjectData } from "./Utils";
 import { CiImageOff } from "react-icons/ci";
 import LanguageIcon from "./LanguageIcon";
+import TagBadge from "./TagBadge";
 
 type Props = {
   project: IProjectData;
@@ -12,14 +13,7 @@ export default function ProjectCard({ project }: Props) {
 
   // tags
   const renderedTags = project.tags?.map((tag, index) => {
-    return (
-      <div
-        className="badge border-0 bg-indigo-500 text-white py-2 font-primary"
-        key={index}
-      >
-        {tag}
-      </div>
-    );
+    return <TagBadge tag={tag} key={index} />;
   });
 
   // languages
@@ -43,7 +37,6 @@ export default function ProjectCard({ project }: Props) {
       />
     );
   } else {
-    console.log("no image available");
     imageContent = (
       <div className="flex flex-col items-center ">
         <CiImageOff className="text-7xl" />
@@ -55,16 +48,18 @@ export default function ProjectCard({ project }: Props) {
   return (
     <div
       onClick={handleCardClicked}
-      className="card hover:scale-100 lg:hover:scale-105 transition-all m-3 border border-gray-300 w-full sm:w-96 bg-gray-200 cursor-pointer"
+      className="card border hover:scale-100 lg:hover:scale-105 transition-all m-3 w-full sm:w-96 bg-base-300 cursor-pointer"
     >
-      <figure className="h-64 border-b border-gray-300">{imageContent}</figure>
+      <figure className="h-64 border-b border-gray-400">{imageContent}</figure>
       <div className="card-body">
-        <h2 className="card-title text-3xl text-gray-600 font-primary">
+        <h2 className="card-title text-3xl text-gray-200 font-primary">
           {project.title}
           <div className="flex gap-2">{renderedLanguages}</div>
         </h2>
-        <p className="pb-2 text-gray-500">{project.subtitle}</p>
-        <div className="card-actions justify-end">{renderedTags}</div>
+        <p className="hidden sm:block pb-2 text-gray-200">{project.subtitle}</p>
+        <div className="card-actions justify-start sm:justify-end pt-4 sm:pt-0">
+          {renderedTags}
+        </div>
       </div>
     </div>
   );
