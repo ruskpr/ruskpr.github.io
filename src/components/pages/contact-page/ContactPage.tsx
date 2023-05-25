@@ -1,12 +1,22 @@
+import Breadcrumb from "../../ui/Breadcrumb";
+import { Link } from "react-router-dom";
+
 export default function ContactPage() {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100">
-        Contact Me
+    <div className="h-full w-full pb-64">
+      <Breadcrumb>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </Breadcrumb>
+      <h1 className="pt-32 text-4xl font-bold text-gray-800 dark:text-gray-100">
+        Contact
       </h1>
-      <p className="text-gray-600 dark:text-gray-300">
-        I'd love to hear from you!
-      </p>
     </div>
   );
 }
