@@ -4,6 +4,7 @@ export interface IProjectData {
     id: number; // required
     slug: string; // required
     title: string; // required
+    type: string; // required
     subtitle: string; // required
     description: string; // required
     description2?: string;
@@ -26,6 +27,7 @@ export const getDataFromFile = () => {
             id: project.id, 
             slug: project.slug, 
             title: project.title,
+            type: project.type,
             subtitle: project.subtitle,
             description: project.description,
             description2: project.description2,
