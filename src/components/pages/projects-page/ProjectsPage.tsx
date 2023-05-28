@@ -11,6 +11,8 @@ export default function ProjectsPage() {
   let renderedProjectCards: JSX.Element[] = [];
 
   useEffect(() => {
+    window.scrollTo(0, 1)
+
     var data = getDataFromFile();
     setProjectData(data);
   }, []);

@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IProjectData, getProjectDataBySlug } from "./Utils";
 import Error404Page from "../404/404";
@@ -11,6 +12,10 @@ import Breadcrumb from "../../ui/Breadcrumb";
 export default function ProjectDetailPage() {
   let { slug } = useParams();
   const projectData: IProjectData | undefined = getProjectDataBySlug(slug);
+
+  useEffect(() => {
+    window.scrollTo(0, 1);
+  }, []);
 
   if (!slug || !projectData) {
     return <Error404Page />;
