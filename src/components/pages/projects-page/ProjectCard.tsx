@@ -56,6 +56,8 @@ export default function ProjectCard({ project }: Props) {
           {project.title}
           <div className="flex gap-2">{renderedLanguages}</div>
         </h2>
+        <p className="hidden sm:block pb-2 text-gray-400">{project.type}</p>
+        <hr className="border-gray-400" />
         <p className="hidden sm:block pb-2 text-gray-200">{project.subtitle}</p>
         <div className="card-actions justify-start sm:justify-end pt-4 sm:pt-0">
           {renderedTags}
