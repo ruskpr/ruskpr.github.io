@@ -8,6 +8,7 @@ import ProjectDetailSidebar from "./ProjectDetailSidebar";
 import ProjectDetailInfo from "./ProjectDetailInfo";
 import { Button, ButtonType } from "../../ui/Button";
 import Breadcrumb from "../../ui/Breadcrumb";
+import { BsArrowLeft } from "react-icons/bs";
 
 export default function ProjectDetailPage() {
   let { slug } = useParams();
@@ -50,7 +51,8 @@ export default function ProjectDetailPage() {
 
       <div className="flex justify-center items-center mt-24">
         <Button type={ButtonType.Primary}>
-          <Link className="text-xl" to="/projects">
+          <Link className="text-xl flex items-center" to="/projects">
+            <BsArrowLeft className="mr-2" />
             Back to projects
           </Link>
         </Button>
