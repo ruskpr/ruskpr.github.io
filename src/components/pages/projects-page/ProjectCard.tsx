@@ -30,8 +30,7 @@ export default function ProjectCard({ project }: Props) {
   if (project.images && project.images?.length > 0) {
     imageContent = (
       <img
-        className="h-full"
-        style={{ objectFit: "cover" }}
+        className="h-full w-full object-cover"
         src={project.images ? project.images[0] : ""}
         alt={project.title}
       />
@@ -52,13 +51,12 @@ export default function ProjectCard({ project }: Props) {
     >
       <figure className="h-64 border-b border-gray-400">{imageContent}</figure>
       <div className="card-body">
-        <h2 className="card-title text-3xl text-gray-200 font-primary">
+        <h2 className="card-title text-3xl text-gray-200 font-primary font-normal">
           {project.title}
           <div className="flex gap-2">{renderedLanguages}</div>
         </h2>
-        <p className="hidden sm:block pb-2 text-gray-400">{project.type}</p>
-        <hr className="border-gray-400" />
-        <p className="hidden sm:block pb-2 text-gray-200">{project.subtitle}</p>
+        <p className="hidden sm:block text-gray-400">{project.type}</p>
+        <p className="block pb-2 text-gray-200">{project.subtitle}</p>
         <div className="card-actions justify-start sm:justify-end pt-4 sm:pt-0">
           {renderedTags}
         </div>

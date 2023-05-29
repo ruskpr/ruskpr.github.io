@@ -32,7 +32,7 @@ const BackToTop = () => {
   return (
     <div className={dynamicStyles} onClick={scrollToTop}>
       <Button type={ButtonType.Link}>
-        <BsFillArrowUpSquareFill className="text-5xl lg:text-7xl opacity-40 text-gray-200" />
+        <BsFillArrowUpSquareFill className="text-5xl lg:text-7xl opacity-40 text-gray-200 hover:text-white hover:opacity-100" />
       </Button>
     </div>
   );

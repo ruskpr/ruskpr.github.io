@@ -13,7 +13,7 @@ interface ButtonProps {
 
 // create an enum for button types
 export enum ButtonType {
-  Primary = "bg-indigo-700 hover:bg-indigo-800",
+  Primary = "bg-indigo-600 hover:bg-indigo-700",
   Secondary = "bg-red-400 hover:bg-red-500",
   Success = "bg-green-500 hover:bg-green-700",
   Danger = "bg-rose-800 hover:bg-rose-900",
@@ -46,7 +46,7 @@ export const Button = (props: ButtonProps) => {
   } = props;
 
   const defaultStyles =
-    "flex items-center text-sm font-primary font-bold text-white font-medium rounded-md";
+    "flex items-center text-sm font-primdary font-bold text-white font-medium rounded-full";
   const hoverTransition = animate
     ? "transition duration-100 ease-in-out hover:shadow-lg hover:scale-105"
     : "";
