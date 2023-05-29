@@ -12,7 +12,11 @@ export default function ProjectDetailCarousel(props: {
   if (projectImages?.length > 0) {
     renderedCarouselImages = projectImages.map((img, index) => {
       return (
-        <div key={index} id={`item${index}`} className="carousel-item w-full">
+        <div
+          key={index}
+          id={`item${index}`}
+          className="carousel-item w-full bg-zinc-800 border border-zinc-600"
+        >
           <img
             onDragStart={(e) => e.preventDefault()}
             src={img}
@@ -37,23 +41,14 @@ export default function ProjectDetailCarousel(props: {
           >
             <img
               onDragStart={(e) => e.preventDefault()}
-              className="object-contain w-32 lg:w-40 h-24 lg:h-32 rounded-xl bg-gray-200"
+              className="border border-zinc-600 object-contain w-32 lg:w-40 h-24 lg:h-32 rounded-xl bg-zinc-800"
               src={img}
               alt={(index + 1).toString()}
             />
           </div>
         );
       } else {
-        return (
-          <div
-            key={index + 1}
-            onMouseEnter={() => handleScroll(index)}
-            onClick={() => handleScroll(index)}
-            className="cursor-pointer"
-          >
-            <Spinner size={4} />
-          </div>
-        );
+        return <></>;
       }
     });
   }
@@ -109,7 +104,7 @@ export default function ProjectDetailCarousel(props: {
           {renderedCarouselImages.length > 0 ? renderedCarouselImages : <></>}
         </div>
       </div>
-      <div className="flex rounded-3xl mt-3 justify-center lg:justify-start w-full py-2 gap-2 overflow-x-auto">
+      <div className="flex mt-2 justify-center lg:justify-start w-full py-2 gap-2 overflow-x-auto">
         {renderedCarouselButtons.length > 0 ? renderedCarouselButtons : <></>}
       </div>
     </div>

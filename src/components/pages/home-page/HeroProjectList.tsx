@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 export default function HeroProjectList() {
   const linkStyles: string =
-    "rounded-none border-b border-indigo-500 pr-0 pb-0 mb-2 hover:border-white hover:text-white transition duration-300 ease-in-out";
+    "rounded-none border-b border-blue-600 pr-0 pb-0 mb-2 hover:text-white transition duration-300 ease-in-out";
 
   return (
     <div className="w-full lg:w-64 h-full flex flex-col items-end pt-16 lg:pt-7">

@@ -34,8 +34,10 @@ export default function ProjectDetailSidebar(props: {
   }
 
   return (
-    <article className="border-0 lg:border border-white prose w-full bg-gray-200 p-8 rounded-3xl bg-transparent lg:bg-base-300">
-      <h1 className="text-white lg:text-gray-200 text-3xl font-primary">{data.title}</h1>
+    <article className="border-0 lg:border border-zinc-600 prose w-full p-8 rounded-3xl bg-transparent lg:bg-zinc-800">
+      <h1 className="text-white lg:text-gray-200 text-3xl font-primary">
+        {data.title}
+      </h1>
       <p className="lg:text-gray-200 font-bold">{data.type}</p>
       <p className="lg:text-gray-200 ">{data.subtitle}</p>
 

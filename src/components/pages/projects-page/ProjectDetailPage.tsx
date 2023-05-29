@@ -52,7 +52,7 @@ export default function ProjectDetailPage() {
 
       <div className="flex justify-center items-center mt-24">
         <Button type={ButtonType.Primary}>
-          <Link className="text-xl flex items-center" to="/projects">
+          <Link className="text-xl flex items-center px-4" to="/projects">
             <BsArrowLeft className="mr-2" />
             Back to projects
           </Link>

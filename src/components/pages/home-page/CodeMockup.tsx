@@ -72,7 +72,7 @@ export default function CodeMockup() {
           </pre>
           <pre
             data-prefix=">"
-            className="flex items-center text-white animate-pulse bg-indigo-500 text-warning-conten"
+            className="flex items-center text-white animate-pulse bg-blue-600 text-warning-conten"
           >
             <code className="flex items-center">
               View projects? [
@@ -80,6 +80,7 @@ export default function CodeMockup() {
                 type={ButtonType.Link}
                 size={ButtonSize.lg}
                 onClick={handleYesClicked}
+                className="hover:text-black"
               >
                 y
               </Button>
@@ -88,6 +89,7 @@ export default function CodeMockup() {
                 type={ButtonType.Link}
                 size={ButtonSize.lg}
                 onClick={handleNoClicked}
+                className="hover:text-black"
               >
                 n
               </Button>

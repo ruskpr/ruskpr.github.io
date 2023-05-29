@@ -47,9 +47,9 @@ export default function ProjectCard({ project }: Props) {
   return (
     <div
       onClick={handleCardClicked}
-      className="card border hover:scale-100 lg:hover:scale-105 transition-all m-3 w-full sm:w-96 bg-base-300 cursor-pointer"
+      className="card border border-zinc-600 hover:scale-100 lg:hover:scale-105 transition-all m-3 w-full sm:w-96 bg-zinc-800 cursor-pointer"
     >
-      <figure className="h-64 border-b border-gray-400">{imageContent}</figure>
+      <figure className="h-64 border-b border-gray-500">{imageContent}</figure>
       <div className="card-body">
         <h2 className="card-title text-3xl text-gray-200 font-primary font-normal">
           {project.title}
