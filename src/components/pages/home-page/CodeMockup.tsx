@@ -11,6 +11,7 @@ export default function CodeMockup() {
     showHtml2: false,
     toggleCaret: false,
     codeText: "",
+    hidden: false,
   });
 
   useEffect(() => {
@@ -43,32 +44,40 @@ export default function CodeMockup() {
     navigate("/projects");
   };
 
-  const handleNoClicked = () => {};
+  const handleNoClicked = () => {
+    setState({
+      ...state,
+      hidden: true,
+    });
+  };
 
   return (
-    <div className="bg-neutral-700 p-6 rounded-3xl text-md lg:text-3xl overflow-auto z-0">
+    <div
+      className={` ${
+        state.hidden && "hidden"
+      } mockup-code rounded-3xl text-md lg:text-xl overflow-auto z-0`}
+    >
       <pre data-prefix=">">
-        <span>{"> "}</span>
         <code>{state.codeText}</code>
       </pre>
       {state.codeText.length === codeTextTarget.length && (
         <pre data-prefix=">" className="text-warning">
-          <span>{"> "}</span>
           <code>installing...</code>
         </pre>
       )}
       {state.showHtml2 && (
         <div>
           <pre data-prefix=">" className="text-success">
-            <span>{"> "}</span>
             <code>Done!</code>
           </pre>
-          <pre data-prefix=">" className="flex items-center text-violet-400">
-            <span>{"> "}</span>
+          <pre
+            data-prefix=">"
+            className="flex items-center text-white animate-pulse bg-indigo-500 text-warning-conten"
+          >
             <code className="flex items-center">
               View projects? [
               <Button
-                type={ButtonType.Primary}
+                type={ButtonType.Link}
                 size={ButtonSize.lg}
                 onClick={handleYesClicked}
               >
@@ -76,7 +85,7 @@ export default function CodeMockup() {
               </Button>
               /
               <Button
-                type={ButtonType.Primary}
+                type={ButtonType.Link}
                 size={ButtonSize.lg}
                 onClick={handleNoClicked}
               >
