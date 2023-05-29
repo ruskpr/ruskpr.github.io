@@ -1,7 +1,7 @@
 [
     {
         "id": 0,
-        "slug": "linq-sql-examples",
+        "slug": "linq-sql-queries",
         "title": "SQL / LINQ queries",
         "type": "Personal Project",
         "subtitle": "A collection of examples that demonstrate Language Integrated Query (LINQ) in C#.",
@@ -16,11 +16,13 @@
             "https://github.com/ruskpr/csharp-sql-linq-examples/blob/main/Images/example-query3.png?raw=true"
         ],
         "tags": [
+            ".NET",
+            "WPF",
+            "XAML",
+            "LINQ",
             "SQLite",
             "SQLServer",
-            "LINQ",
-            "WPF",
-            ".NET"
+            "Material Design"
         ],
         "links": {
             "github": "https://github.com/ruskpr/csharp-sql-linq-examples",
@@ -35,9 +37,9 @@
         "slug": "chess",
         "title": "Chess",
         "type": "Personal Project",
-        "subtitle": "A chess engine written in C#. Includes sample applications.",
+        "subtitle": "A chess engine written in C#. It includes sample applications.",
         "description": "This project contains a chess engine written in C# that has all of the features to play a full game of chess. I began developing this as a school project which I eventually presented in my final year. Even though the project is essentially complete, I still continue to work on it and add new features as I find it to be a great way to learn new things. The project includes a console application and desktop application with UDP multiplayer capabilities.",
-        "description2": "During the time that I spend developing this project while I was in school, I gained knowledge of many object-oriented programming principles. The pieces are abstracted into their own classes with their own unique movement logic. The board is a 2d array of pieces and is responsible for validating moves, checking for checkmate, and other game-related logic.",
+        "description2": "During the time that I spent developing this project while I was in school, I gained knowledge of many object-oriented programming principles. The pieces are abstracted into their own classes with their own unique movement logic. The board is a 2d array of pieces and is responsible for validating moves, checking for checkmate, and other game-related logic.",
         "description3": null,
         "images": [
             "https://github.com/ruskpr/Chess/blob/master/Images/fools-mate.png?raw=true",
@@ -64,9 +66,9 @@
         "title": "market.io",
         "type": "Personal Project",
         "subtitle": "A web platform where users can buy and list items, real estate, jobs, etc.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet sagittis id consectetur purus ut. Viverra aliquet eget sit amet. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Aliquam ultrices sagittis orci a. Dolor sit amet consectetur adipiscing. Ultricies mi quis hendrerit dolor magna eget. Morbi blandit cursus risus at ultrices mi. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Lectus quam id leo in vitae turpis massa sed. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a.",
-        "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet sagittis id consectetur purus ut. Viverra aliquet eget sit amet. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Aliquam ultrices sagittis orci a. Dolor sit amet consectetur adipiscing. Ultricies mi quis hendrerit dolor magna eget. Morbi blandit cursus risus at ultrices mi. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Lectus quam id leo in vitae turpis massa sed. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a.",
-        "description3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet sagittis id consectetur purus ut. Viverra aliquet eget sit amet. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Aliquam ultrices sagittis orci a. Dolor sit amet consectetur adipiscing. Ultricies mi quis hendrerit dolor magna eget. Morbi blandit cursus risus at ultrices mi. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Lectus quam id leo in vitae turpis massa sed. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a.",
+        "description": "",
+        "description2": null,
+        "description3": null,
         "images": [
             "https://github.com/ruskpr/marketio/blob/main/images/listings.png?raw=true",
             "https://github.com/ruskpr/marketio/blob/main/images/listing-detail-page.png?raw=true",

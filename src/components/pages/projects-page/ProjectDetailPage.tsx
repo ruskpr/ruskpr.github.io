@@ -15,6 +15,7 @@ export default function ProjectDetailPage() {
   const projectData: IProjectData | undefined = getProjectDataBySlug(slug);
 
   useEffect(() => {
+    document.title = `ruskpr | ${projectData?.title}`;
     window.scrollTo(0, 1);
   }, []);
 

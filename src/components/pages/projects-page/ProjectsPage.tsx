@@ -11,7 +11,8 @@ export default function ProjectsPage() {
   let renderedProjectCards: JSX.Element[] = [];
 
   useEffect(() => {
-    window.scrollTo(0, 1)
+    document.title = "ruskpr | Projects";
+    window.scrollTo(0, 1);
 
     var data = getDataFromFile();
     setProjectData(data);

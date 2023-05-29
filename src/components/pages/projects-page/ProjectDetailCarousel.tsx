@@ -13,7 +13,11 @@ export default function ProjectDetailCarousel(props: {
     renderedCarouselImages = projectImages.map((img, index) => {
       return (
         <div key={index} id={`item${index}`} className="carousel-item w-full">
-          <img style={{ objectFit: "contain" }} src={img} className="w-full" />
+          <img
+            onDragStart={(e) => e.preventDefault()}
+            src={img}
+            className="object-contain w-full"
+          />
         </div>
       );
     });
@@ -32,8 +36,8 @@ export default function ProjectDetailCarousel(props: {
             className="cursor-pointer"
           >
             <img
-              style={{ objectFit: "contain" }}
-              className="w-32 lg:w-40 h-24 lg:h-32 rounded-xl bg-gray-200"
+              onDragStart={(e) => e.preventDefault()}
+              className="object-contain w-32 lg:w-40 h-24 lg:h-32 rounded-xl bg-gray-200"
               src={img}
               alt={(index + 1).toString()}
             />
@@ -105,7 +109,7 @@ export default function ProjectDetailCarousel(props: {
           {renderedCarouselImages.length > 0 ? renderedCarouselImages : <></>}
         </div>
       </div>
-      <div className="flex rounded-3xl mt-3 justify-center lg:justify-start w-full py-2 gap-2">
+      <div className="flex rounded-3xl mt-3 justify-center lg:justify-start w-full py-2 gap-2 overflow-x-auto">
         {renderedCarouselButtons.length > 0 ? renderedCarouselButtons : <></>}
       </div>
     </div>
