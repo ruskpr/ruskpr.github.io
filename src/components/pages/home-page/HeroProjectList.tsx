@@ -48,9 +48,9 @@ export default function HeroProjectList() {
       <Button
         type={ButtonType.Link}
         animate={false}
-        className={`font-secondary hover:text-white transition-transform hover:translate-x-3`}
+        className={`font-secondary transition-all hover:translate-x-3`}
       >
-        <Link to="/projects">View them all</Link>
+        <Link to="/projects">View more</Link>
         <BsArrowRight className="ml-2 " />
       </Button>
     </div>
