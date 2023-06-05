@@ -41,7 +41,7 @@ export default function ProjectDetailCarousel(props: {
           >
             <img
               onDragStart={(e) => e.preventDefault()}
-              className="border border-zinc-600 object-contain w-32 lg:w-40 h-24 lg:h-32 rounded-xl bg-zinc-800"
+              className="border border-zinc-600 object-contain w-32 lg:w-40 h-24 rounded-xl bg-zinc-800"
               src={img}
               alt={(index + 1).toString()}
             />
@@ -93,7 +93,7 @@ export default function ProjectDetailCarousel(props: {
   return (
     <div>
       <div
-        className="overflow-hidden rounded-3xl w-full bg-gray-300"
+        className="overflow-hidden rounded-3xl w-full lg:w-2/3 bg-gray-300"
         onMouseLeave={(e) => handleMouseLeave(e)}
       >
         <div
@@ -104,7 +104,7 @@ export default function ProjectDetailCarousel(props: {
           {renderedCarouselImages.length > 0 ? renderedCarouselImages : <></>}
         </div>
       </div>
-      <div className="flex mt-2 justify-center lg:justify-start w-full py-2 gap-2 overflow-x-auto">
+      <div className="flex mt-2 justify-center lg:justify-start w-full lg:w-2/3 py-2 gap-2 overflow-x-auto">
         {renderedCarouselButtons.length > 0 ? renderedCarouselButtons : <></>}
       </div>
     </div>
