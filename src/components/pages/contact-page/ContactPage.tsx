@@ -32,7 +32,7 @@ export default function ContactPage() {
                     data-tip="Open in mail app"
                     className="text-gray-300 underline tooltip tooltip-bottom"
                   >
-                    russ.koprulu.@gmail.com
+                    russ.koprulu@gmail.com
                   </span>
                 </Link>{" "}
               </p>
