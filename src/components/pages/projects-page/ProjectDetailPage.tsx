@@ -6,6 +6,7 @@ import Error404Page from "../404/404";
 import ProjectDetailCarousel from "./ProjectDetailCarousel";
 import ProjectDetailSidebar from "./ProjectDetailSidebar";
 import ProjectDetailInfo from "./ProjectDetailInfo";
+import ProjectDownloadSection from "./ProjectDownloadSection";
 import { Button, ButtonType } from "../../ui/Button";
 import Breadcrumb from "../../ui/Breadcrumb";
 import { BsArrowLeft } from "react-icons/bs";
@@ -46,10 +47,16 @@ export default function ProjectDetailPage() {
         <ProjectDetailSidebar projectData={projectData} />
       </div>
 
-      <div className="px-8 w-full">
+      <div className="px-8 mb-20 w-full">
         <ProjectDetailInfo projectData={projectData} />
       </div>
 
+      {/* download section */}
+      {projectData.downloads && (
+        <ProjectDownloadSection downloads={projectData.downloads} />
+      )}
+
+      {/* back button */}
       <div className="flex justify-center items-center mt-24">
         <Button type={ButtonType.Primary}>
           <Link className="text-xl flex items-center px-4" to="/projects">
