@@ -1,8 +1,8 @@
 [
     {
         "id": 0,
-        "slug": "linq-sql-queries",
-        "title": "SQL / LINQ queries",
+        "slug": "sql-linq-queries",
+        "title": "SQL / LINQ Queries",
         "type": "Personal Project",
         "subtitle": "A collection of examples that demonstrate Language Integrated Query (LINQ) in C#.",
         "description": "Language Integrated Query (LINQ) is a Microsoft .NET Framework component that adds language-level data querying capabilities.",
@@ -30,6 +30,17 @@
         },
         "languages": [
             "C#"
+        ],
+        "downloads": [
+            {
+                "title": "SQL / LINQ Queries",
+                "type": "Compressed .zip",
+                "name": "sql-linq-queries.zip",
+                "url": "/downloads/sql-linq-queries/sql-linq-queries.zip",
+                "size": "10.2 MB",
+                "version": "1.0",
+                "isLatest": true
+            }
         ]
     },
     {
