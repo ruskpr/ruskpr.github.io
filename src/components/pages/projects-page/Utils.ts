@@ -16,7 +16,18 @@ export interface IProjectData {
       website?: string;
     };
     languages?: string[];
-  }
+    downloads?: DownloadObject[];
+}
+
+export interface DownloadObject {
+    title: string;
+    type: string;
+    name: string;
+    url: string;
+    size: string;
+    version: string;
+    isLatest: boolean;
+}
   
 
 export const getDataFromFile = () => {
@@ -36,6 +47,7 @@ export const getDataFromFile = () => {
             languages: project.languages,
             tags: project.tags,
             links: project.links,
+            downloads: project.downloads
         };
         projectData.push(newProject);
     });
