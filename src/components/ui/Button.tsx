@@ -15,7 +15,7 @@ interface ButtonProps {
 export enum ButtonType {
   Primary = "bg-blue-600 hover:bg-blue-700",
   Secondary = "bg-red-400 hover:bg-red-500",
-  Success = "bg-green-500 hover:bg-green-700",
+  Success = "bg-green-600 hover:bg-green-700",
   Danger = "bg-rose-800 hover:bg-rose-900",
   Warning = "bg-yellow-500 hover:bg-yellow-600",
   Info = "bg-cyan-400 hover:bg-cyan-300",
