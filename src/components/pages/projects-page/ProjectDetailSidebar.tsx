@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button, ButtonType } from "../../ui/Button";
 import LanguageIcon from "./LanguageIcon";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsGlobe } from "react-icons/bs";
 import TagBadge from "./TagBadge";
 import { IProjectData } from "./Utils";
 
@@ -23,12 +23,22 @@ export default function ProjectDetailSidebar(props: {
   });
 
   let githubLink = <></>;
+  let websiteLink = <></>;
 
   if (data.links?.github != null) {
     githubLink = (
       <Link className="flex gap-2 items-center" to={data.links.github}>
         <BsGithub />
         {data.links.github}
+      </Link>
+    );
+  }
+
+  if (data.links?.website != null) {
+    websiteLink = (
+      <Link className="flex gap-2 items-center" to={data.links.website}>
+        <BsGlobe />
+        {data.links.website}
       </Link>
     );
   }
@@ -49,6 +59,7 @@ export default function ProjectDetailSidebar(props: {
 
       <h3 className="text-gray-300">Links</h3>
       <div className="flex flex-col flex-wrap p-0">{githubLink}</div>
+      <div className="flex flex-col flex-wrap p-0">{websiteLink}</div>
     </article>
   );
 }

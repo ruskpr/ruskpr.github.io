@@ -26,7 +26,7 @@
         ],
         "links": {
             "github": "https://github.com/ruskpr/csharp-sql-linq-examples",
-            "website": "www.github.com/ruskpr"
+            "website": null
         },
         "languages": [
             "C#"
@@ -38,9 +38,9 @@
         "title": "Chess",
         "type": "Personal Project",
         "subtitle": "A chess engine written in C#. It includes sample applications.",
-        "description": "This project contains a chess engine written in C# that has all of the features to play a full game of chess. I began developing this as a school project which I eventually presented in my final year. Even though the project is essentially complete, I still continue to work on it and add new features as I find it to be a great way to learn new things. The project includes a console application and desktop application with UDP multiplayer capabilities.",
-        "description2": "During the time that I spent developing this project while I was in school, I gained knowledge of many object-oriented programming principles. The pieces are abstracted into their own classes with their own unique movement logic. The board is a 2d array of pieces and is responsible for validating moves, checking for checkmate, and other game-related logic.",
-        "description3": null,
+        "description": "This project contains a chess engine written in C# that has all of the features to play a full game of chess. I began developing this as a school project which I eventually presented in my final year.",
+        "description2": "The pieces are abstracted into their own classes with their own unique movement logic. The board is a 2d array of pieces and is responsible for validating moves, checking for checkmate, and other game-related logic.",
+        "description3": "Even though the project is essentially complete, I still continue to work on it and add new features as I find it to be a great way to learn new things. The project includes a console application and desktop application with UDP multiplayer capabilities.",
         "images": [
             "https://github.com/ruskpr/Chess/blob/master/Images/fools-mate.png?raw=true",
             "https://github.com/ruskpr/Chess/blob/master/Images/join-server.png?raw=true",
@@ -89,6 +89,35 @@
         "languages": [
             "C#",
             "blazor"
+        ]
+    },
+    {
+        "id": 3,
+        "slug": "pws-company-website",
+        "title": "PWS Company Website",
+        "type": "Professional Project",
+        "subtitle": "ReactJS website for a renovation company. Hosted on AWS.",
+        "description": "A professional website for a renovation company in Edmonton, Alberta. The website is build with ReactJS and hosted on AWS Amplify. I chose to use TypeScript because it is simply makes web development a whole lot more enjoyable and easier to debug. I handled all the domain and hosting configurations for the client as well.",
+        "description2": "React being a stateful component-based framework, allowed me to implement interactive features the client requested. Whenever a service is clicked, a modal will show up with scrollable images, each having a brief description. Also, there is a contact form that allows users to send messages to the company email address, which is handled by the EmailJS API. From there, the company can respond to the user's message to further speak about their business.",
+        "description3": "The site is styled with Tailwind CSS, which is a flexible CSS framework which allows more freedom than Bootstrap. It is very easy to use and helps speed up the time-consuming aspect of webpage styling. The site is also responsive and looks great on all devices. Because the site is hosted using AWS Amplify, it is very easy to update and maintain the site. All you essentially need to do is push to the main branch and Amplify will automatically build and deploy to the live site.",
+        "images": [
+            "/images/pws-hero.png",
+            "/images/pws-modal.png",
+            "/images/pws-contact.png"
+        ],
+        "tags": [
+            "AWS",
+            "Tailwind CSS",
+            "Email API"
+        ],
+        "links": {
+            "github": null,
+            "website": "https://www.patarawalls.ca/"
+        },
+        "languages": [
+            "React",
+            "ts",
+            "tailwindcss"
         ]
     }
 ]
