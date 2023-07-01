@@ -6,7 +6,7 @@
         "type": "Personal Project",
         "subtitle": "A collection of examples that demonstrate Language Integrated Query (LINQ) in C#.",
         "description": "Language Integrated Query (LINQ) is a Microsoft .NET Framework component that adds language-level data querying capabilities.",
-        "description2": "The purpose of this project is to demonstrate the use of LINQ in C# by querying data from a Microsoft's 'Northwind' sample database. The project includes a WPF application that allows the user to query data from a SQLite database (and a SQL Server database if you decide to configure it that way).",
+        "description2": "The purpose of this project is to demonstrate the use of LINQ in C# by manipulating data from Microsoft's 'Northwind' sample database. The project includes a WPF application that allows the user to query data from a SQLite database (or SQL Server, depending on your configuration).",
         "description3": "Alternatively, the project can be used as a template for any C# WPF application where you plan to use LINQ as it is structured in a way that allows for easy modification and configuration.",
         "images": [
             "https://github.com/ruskpr/csharp-sql-linq-examples/blob/main/Images/example-query.png?raw=true",
@@ -48,9 +48,9 @@
         "slug": "chess",
         "title": "Chess",
         "type": "Personal Project",
-        "subtitle": "A chess engine written in C#. It includes sample applications.",
-        "description": "This project contains a chess engine written in C# that has all of the features to play a full game of chess. I began developing this as a school project which I eventually presented in my final year.",
-        "description2": "The pieces are abstracted into their own classes with their own unique movement logic. The board is a 2d array of pieces and is responsible for validating moves, checking for checkmate, and other game-related logic.",
+        "subtitle": "A chess engine written in C# which includes sample applications.",
+        "description": "This project contains a chess engine written in C# that has all of the features to play a full game of chess. I began developing this as a school project which I eventually presented in my final year of study.",
+        "description2": "The pieces are abstracted into their own classes with unique movement logic. The board is a 2d array of tiles (spaces) and is responsible for validating moves, checking for checkmate, and other game-related logic.",
         "description3": "Even though the project is essentially complete, I still continue to work on it and add new features as I find it to be a great way to learn new things. The project includes a console application and desktop application with UDP multiplayer capabilities.",
         "images": [
             "https://github.com/ruskpr/Chess/blob/master/Images/fools-mate.png?raw=true",
@@ -64,7 +64,7 @@
             "AI Algorithms"
         ],
         "links": {
-            "github": "https://github.com/ruskpr/Chess",
+            "github": "https://github.com/ruskpr/chess",
             "website": null
         },
         "languages": [
