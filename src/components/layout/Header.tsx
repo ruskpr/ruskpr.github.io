@@ -108,7 +108,7 @@ export default function Header() {
                 animate={false}
                 className="hover:text-red-500"
               >
-                <Link target="_blank" to="mailto://russ.koprulu@gmail.com">
+                <Link target="_blank" to="mailto:russ.koprulu@gmail.com">
                   <SiGmail className="text-4xl md:text-lg ml-1" />
                 </Link>
               </Button>
