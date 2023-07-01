@@ -31,7 +31,7 @@ export default function ProjectDownloadSection(props: {
             </Button>
             {download.isLatest && (
               <span className="badge absolute left-2 top-2 bg-zinc-600 font-bold text-green-500">
-                Newest version
+                Newest
               </span>
             )}
           </Panel>
