@@ -4,6 +4,7 @@ import ProjectCardContainer from "./ProjectCardContainer";
 import { IProjectData, getDataFromFile } from "./Utils";
 import { Link } from "react-router-dom";
 import Breadcrumb from "../../ui/Breadcrumb";
+import SearchComponent from "./Search";
 
 export default function ProjectsPage() {
   const [projectData, setProjectData] = useState<IProjectData[]>([]);
@@ -34,6 +35,8 @@ export default function ProjectsPage() {
           </li>
         </ul>
       </Breadcrumb>
+
+      <SearchComponent data={projectData} setData={setProjectData} />
 
       <ProjectCardContainer>{renderedProjectCards}</ProjectCardContainer>
     </div>
