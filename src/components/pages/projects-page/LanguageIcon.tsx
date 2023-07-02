@@ -16,7 +16,7 @@ const getLanguageIcon = (language: string) => {
       return <SiJavascript className="text-yellow-500 bg-black" />;
     case "typescript":
     case "ts":
-      return <SiTypescript className="text-blue-500 bg-black" />;
+      return <SiTypescript className="text-blue-500 bg-white rounded" />;
     case "html":
       return <SiHtml5 className="text-red-500" />;
     case "css":
