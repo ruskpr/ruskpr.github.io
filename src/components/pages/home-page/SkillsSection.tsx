@@ -41,11 +41,14 @@ export default function SkillsSection() {
           Frontend
         </h1>
         <div className="flex justify-center sm:justify-start">
-          <div className="w-72 border-b ml-0 sm:ml-4 border-blue-600 mb-8" />
+          <div className="w-72 border-b ml-0 sm:mr-4 border-blue-600 mb-8" />
         </div>
 
-        <div className="relative bg-transparent lg:bg-gray-500 rounded-0 lg:rounded-e-full p-2 sm:p-6 sm:pr-16 pt-8 text-center flex flex-wrap justify-center gap-8 sm:gap-4 lg:gap-8 w-full lg:w-fit h-fit sm:h-48 mr-32">
-          <div className="skill-list-bar-l transparent lg:bg-gray-500" />
+        <div
+          className="relative flex flex-wrap justify-center gap-8 sm:gap-4 lg:gap-8 bg-transparent lg:bg-gray-500  
+                     w-full lg:w-fit h-fit sm:h-48 mr-32 rounded-0 lg:rounded-e-full p-2 sm:p-6 sm:pr-16 pt-0 sm:pt-10 text-center"
+        >
+          <div className="skill-list-bar-l lg:bg-gray-500" />
 
           <div>
             <div className={iconDivStyle}>
@@ -107,67 +110,79 @@ export default function SkillsSection() {
           <div className="w-72 border-b ml-0 sm:ml-4 border-blue-600 mb-8" />
         </div>
 
-        <div className="relative bg-transparent lg:bg-gray-500 rounded-0 lg:rounded-s-full p-2 sm:p-6 sm:pl-16 pt-8 text-center flex flex-wrap justify-center gap-8 sm:gap-4 lg:gap-8 w-full lg:w-fit h-fit sm:h-48 mr-32">
+        <div className="flex flex-wrap justify-end">
+          <div
+            className="relative flex flex-wrap justify-center gap-8 sm:gap-4 lg:gap-8 bg-transparent lg:bg-gray-500  
+                     w-full lg:w-fit h-fit sm:h-48 rounded-0 lg:rounded-s-full p-2 sm:p-6 sm:pl-16 pt-0 sm:pt-10 text-center"
+          >
+            <div className="skill-list-bar-r transparent lg:bg-gray-500" />
 
-          <div className="skill-list-bar-r transparent lg:bg-gray-500" />
-
-          <div>
-            <div className={iconDivStyle}>
-              <SiNextdotjs className="text-zinc-800 z-10" />
-              <div className={iconBgStyle} />
+            <div>
+              <div className={iconDivStyle}>
+                <SiNextdotjs className="text-zinc-800 z-10" />
+                <div className={iconBgStyle} />
+              </div>
+              <span className="font-primary font-semibold">Next.js</span>
             </div>
-            <span className="font-primary font-semibold">Next.js</span>
-          </div>
 
-          <div>
-            <div className={iconDivStyle}>
-              <SiNodedotjs className="text-green-500 z-10" />
-              <div className={iconBgStyle} />
+            <div>
+              <div className={iconDivStyle}>
+                <SiNodedotjs className="text-green-500 z-10" />
+                <div className={iconBgStyle} />
+              </div>
+              <span className="font-primary font-semibold">Node.js</span>
             </div>
-            <span className="font-primary font-semibold">Node.js</span>
-          </div>
 
-          <div>
-            <div className={iconDivStyle}>
-              <SiExpress className="text-black z-10" />
-              <div className={iconBgStyle} />
+            <div>
+              <div className={iconDivStyle}>
+                <SiExpress className="text-black z-10" />
+                <div className={iconBgStyle} />
+              </div>
+              <span className="font-primary font-semibold">Express.js</span>
             </div>
-            <span className="font-primary font-semibold">Express.js</span>
-          </div>
 
-          <div>
-            <div className={iconDivStyle}>
-              <SiDotnet className="text-white bg-violet-500 text-7xl rounded-full p-2 z-10" />
-              <div className={iconBgStyle} />
+            <div>
+              <div className={iconDivStyle}>
+                <SiDotnet className="text-white bg-violet-500 text-7xl rounded-full p-2 z-10" />
+                <div className={iconBgStyle} />
+              </div>
+              <span className="font-primary font-semibold">ASP.NET</span>
             </div>
-            <span className="font-primary font-semibold">ASP.NET</span>
-          </div>
 
-          <div>
-            <div className={iconDivStyle}>
-              <SiMysql className="text-cyan-700 z-10" />
-              <div className={iconBgStyle} />
+            <div>
+              <div className={iconDivStyle}>
+                <SiMysql className="text-cyan-700 z-10" />
+                <div className={iconBgStyle} />
+              </div>
+              <span className="font-primary font-semibold">SQL</span>
             </div>
-            <span className="font-primary font-semibold">SQL</span>
-          </div>
 
-          <div>
-            <div className={iconDivStyle}>
-              <SiPhp className="text-indigo-700 z-10" />
-              <div className={iconBgStyle} />
+            <div>
+              <div className={iconDivStyle}>
+                <SiPhp className="text-indigo-700 z-10" />
+                <div className={iconBgStyle} />
+              </div>
+              <span className="font-primary font-semibold">PHP</span>
             </div>
-            <span className="font-primary font-semibold">PHP</span>
           </div>
         </div>
       </article>
 
       {/* DESKTOP & LOW LEVEL */}
       <article className="text-white mb-24">
-        <h1 className="border-b w-full sm:w-fit border-blue-600 text-3xl sm:text-5xl font-primary ml-0 sm:ml-4 mb-8 pr-4 pb-1 text-center sm:text-left">
-          Desktop & Low-Level Programming
-        </h1>
+        <div className="flex justify-center">
+          <h1 className="border-b w-fit border-blue-600 text-3xl sm:text-5xl font-primary mb-8 mx-4 px-4 pb-1 text-center">
+            Desktop & Low-Level Programming
+          </h1>
+        </div>
 
-        <div className="text-center grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2 place-items-center lg:gap-8 w-full">
+        <div
+          className="relative flex justify-center gap-8 sm:gap-4 lg:gap-8 bg-transparent lg:bg-gray-500
+                        w-full h-fit sm:h-48 p-2 sm:p-6 sm:pl-16 pt-0 sm:pt-10 text-center"
+        >
+          <div className="skill-list-bar-l-sm transparent lg:bg-gray-500" />
+          <div className="skill-list-bar-r-sm lg:bg-gray-500" />
+
           <div>
             <div className={iconDivStyle}>
               <SiRust className="text-orange-600 z-10" />

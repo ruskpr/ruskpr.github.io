@@ -37,15 +37,68 @@ code {
 .skill-list-bar-r {
   position: absolute;
   height: 12rem;
-  width: 4000px;
+  width: 500px;
   top: 0;
-  left: 1530px;
+  left: 820px;
+  background: linear-gradient(to left, rgb(3 7 18), rgba(0, 12, 45, 0));
+  display: none;
 }
 
 .skill-list-bar-l {
   position: absolute;
   height: 12rem;
-  width: 4000px;
+  width: 500px;
   top: 0;
   right: 820px;
+  background: linear-gradient(to right, rgb(3 7 18), rgba(0, 12, 45, 0));
+  display: none;
+}
+
+.skill-list-bar-r {
+  position: absolute;
+  height: 12rem;
+  width: 500px;
+  top: 0;
+  left: 820px;
+  background: linear-gradient(to left, rgb(3 7 18), rgba(0, 12, 45, 0));
+  display: none;
+}
+
+.skill-list-bar-l-sm {
+  position: absolute;
+  height: 12rem;
+  width: 250px;
+  top: 0;
+  right: -250px;
+  background: linear-gradient(to right, rgba(0, 12, 45, 0), rgb(3 7 18));
+  display: none;
+}
+
+.skill-list-bar-r-sm {
+  position: absolute;
+  height: 12rem;
+  width: 250px;
+  top: 0;
+  left: -250px;
+  background: linear-gradient(to left, rgba(0, 12, 45, 0), rgb(3 7 18));
+  display: none;
+}
+
+
+
+/* sm */
+@media (min-width: 640px) {
+  
+}
+
+/* md */
+@media (min-width: 768px) {
+
+}
+
+/* md */
+@media (min-width: 1024px) {
+  .skill-list-bar-l, .skill-list-bar-r, .skill-list-bar-l-sm, .skill-list-bar-r-sm {
+    display: block;
+  }
 }
