@@ -80,7 +80,6 @@ export default function CodeMockup() {
                 type={ButtonType.Link}
                 size={ButtonSize.lg}
                 onClick={handleYesClicked}
-                className="hover:text-black"
               >
                 y
               </Button>
@@ -89,7 +88,6 @@ export default function CodeMockup() {
                 type={ButtonType.Link}
                 size={ButtonSize.lg}
                 onClick={handleNoClicked}
-                className="hover:text-black"
               >
                 n
               </Button>

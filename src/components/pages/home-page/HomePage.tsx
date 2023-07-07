@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Hero from "./Hero";
+import SkillsSection from "./SkillsSection";
 
 export default function HomePage() {
   useEffect(() => {
@@ -7,8 +8,9 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="flex justify-center items-start w-full mb-48">
+    <div className="flex flex-col justify-center items-start w-full mb-48">
       <Hero />
+      <SkillsSection />
     </div>
   );
 }

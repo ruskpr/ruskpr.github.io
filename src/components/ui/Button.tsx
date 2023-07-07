@@ -18,7 +18,7 @@ export enum ButtonType {
   Success = "bg-green-600 hover:bg-green-700",
   Danger = "bg-rose-800 hover:bg-rose-900",
   Warning = "bg-yellow-500 hover:bg-yellow-600",
-  Info = "bg-cyan-400 hover:bg-cyan-300",
+  Info = "bg-cyan-500 hover:bg-cyan-600",
   Light = "bg-gray-200 hover:bg-gray-300 text-gray-600",
   Dark = "bg-gray-700 hover:bg-gray-900",
   Link = "font-extralight text-white bg-transparent hover:text-blue-500 hover:shadow-none",
