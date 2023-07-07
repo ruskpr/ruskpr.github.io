@@ -26,7 +26,7 @@ export default function ContactPage() {
             <div className="max-w-md">
               <h1 className="text-2xl font-primary font-bold">Email</h1>
               <p className="py-6">
-                Feel free to contact me at{" "}
+                
                 <Link className="link" to="mailto://russ.koprulu@gmail.com">
                   <span
                     data-tip="Open in mail app"
@@ -53,7 +53,7 @@ export default function ContactPage() {
                 </Link>
                 <Link
                   className="text-gray-300 hover:underline"
-                  to="https://www.linkedin.com/in/russ-koprulu-111165269/"
+                  to="https://www.linkedin.com/in/russ-koprulu/"
                 >
                   <BsLinkedin className="inline-block" />{" "}
                   linkedin.com/in/russ-koprulu

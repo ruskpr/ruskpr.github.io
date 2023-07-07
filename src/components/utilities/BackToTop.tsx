@@ -5,7 +5,7 @@ import { Button, ButtonType } from "../ui/Button";
 const BackToTop = () => {
   const [visible, setVisible] = useState(false);
 
-  const MIN_SCROLL_AMOUNT = 150;
+  const MIN_SCROLL_AMOUNT = 250;
 
   const toggleVisible = () => {
     const current_scroll_val = document.documentElement.scrollTop;

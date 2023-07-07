@@ -30,7 +30,7 @@ export default function SkillsSection() {
       <h2 className="text-3xl sm:text-4xl text-center font-primary font-normal text-white">
         My Skills
       </h2>
-      <div className="w-full flex justify-center mb-4 sm:mb-0">
+      <div className="w-full flex justify-center mb-8 sm:mb-16">
         <div className="w-48 border-b border-blue-600" />
       </div>
       <br />
@@ -101,7 +101,7 @@ export default function SkillsSection() {
       </article>
 
       {/* BACKEND */}
-      <article className="text-white mb-24">
+      <article className="text-white mb-32">
         <h1 className="text-center sm:text-end text-5xl sm:text-6xl font-primary pr-4">
           Backend
         </h1>

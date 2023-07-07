@@ -55,7 +55,7 @@ export default function CodeMockup() {
     <div
       className={` ${
         state.hidden && "hidden"
-      } mockup-code rounded-3xl text-md lg:text-xl overflow-auto z-0`}
+      } mockup-code w-fit sm:w-96 rounded-3xl text-md lg:text-xl overflow-auto z-0`}
     >
       <pre data-prefix=">">
         <code>{state.codeText}</code>
