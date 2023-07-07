@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="footer footer-center p-10 border-t border-gray-500 text-primary-content">
       <div>
-        <p className="font-bold">Russ Koprulu</p>
+        <p className="font-bold">Rustu Koprulu</p>
         <Link to="mailto://russ.koprulu@gmail.com">
           <span className="link">russ.koprulu@gmail.com</span>
         </Link>

@@ -3,13 +3,10 @@ import {
   SiTypescript,
   SiHtml5,
   SiReact,
-  SiRedux,
   SiCsharp,
-  SiBlazor,
   SiTailwindcss,
   SiCss3,
   SiAngular,
-  SiJquery,
   SiBootstrap,
   SiNextdotjs,
   SiNodedotjs,
@@ -17,8 +14,8 @@ import {
   SiMysql,
   SiPhp,
   SiExpress,
-  SiJson,
-  SiFastapi,
+  SiRust,
+  SiCplusplus,
 } from "react-icons/si";
 
 export default function SkillsSection() {
@@ -26,7 +23,7 @@ export default function SkillsSection() {
     "relative overflow-hidden rounded-full w-24 h-24 text-6xl pt-1 bg-white flex justify-center items-center gap-1";
 
   const iconBgStyle =
-    "absolute w-32  h-32 z-0 bg-gray-400 opacity-50 rotate-45 -top-16 -left-20";
+    "absolute w-32 h-32 z-0 bg-gray-400 opacity-50 rotate-45 -top-16 -left-20";
 
   return (
     <section className="h-fit w-full mt-8 md:mt-20 lg:mt-48">
@@ -40,14 +37,16 @@ export default function SkillsSection() {
 
       {/* FRONTEND */}
       <article className="text-white mb-24">
-        <h1 className="text-4xl sm:text-6xl font-primary pl-0 sm:pl-4 text-center sm:text-left ">
+        <h1 className="text-5xl sm:text-6xl font-primary pl-0 sm:pl-4 text-center sm:text-left">
           Frontend
         </h1>
         <div className="flex justify-center sm:justify-start">
           <div className="w-72 border-b ml-0 sm:ml-4 border-blue-600 mb-8" />
         </div>
 
-        <div className="text-center grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2 place-items-center lg:gap-8 w-full">
+        <div className="relative bg-transparent lg:bg-gray-500 rounded-0 lg:rounded-e-full p-2 sm:p-6 sm:pr-16 pt-8 text-center flex flex-wrap justify-center gap-8 sm:gap-4 lg:gap-8 w-full lg:w-fit h-fit sm:h-48 mr-32">
+          <div className="skill-list-bar-l transparent lg:bg-gray-500" />
+
           <div>
             <div className={iconDivStyle}>
               <SiHtml5 className="text-orange-600 z-10" />
@@ -95,33 +94,23 @@ export default function SkillsSection() {
             </div>
             <span className="font-primary font-semibold">Angular</span>
           </div>
-
-          <div>
-            <div className={iconDivStyle}>
-              <SiTailwindcss className="text-blue-500 z-10" />
-              <div className={iconBgStyle} />
-            </div>
-            <span className="font-primary font-semibold">Tailwind CSS</span>
-          </div>
-
-          <div>
-            <div className={iconDivStyle}>
-              <SiBootstrap className="text-violet-600 z-10" />
-              <div className={iconBgStyle} />
-            </div>
-            <span className="font-primary font-semibold">Bootstrap</span>
-          </div>
         </div>
       </article>
 
       {/* BACKEND */}
-      <article className="text-white">
-        <h1 className="text-end text-6xl font-primary pr-4 ">Backend</h1>
-        <div className="flex justify-end">
-          <div className="w-64 border-b mr-4 border-blue-600 mb-8" />
+      <article className="text-white mb-24">
+        <h1 className="text-center sm:text-end text-5xl sm:text-6xl font-primary pr-4">
+          Backend
+        </h1>
+
+        <div className="flex justify-center sm:justify-end">
+          <div className="w-72 border-b ml-0 sm:ml-4 border-blue-600 mb-8" />
         </div>
 
-        <div className="text-center grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2 place-items-center lg:gap-8 w-full">
+        <div className="relative bg-transparent lg:bg-gray-500 rounded-0 lg:rounded-s-full p-2 sm:p-6 sm:pl-16 pt-8 text-center flex flex-wrap justify-center gap-8 sm:gap-4 lg:gap-8 w-full lg:w-fit h-fit sm:h-48 mr-32">
+
+          <div className="skill-list-bar-r transparent lg:bg-gray-500" />
+
           <div>
             <div className={iconDivStyle}>
               <SiNextdotjs className="text-zinc-800 z-10" />
@@ -164,26 +153,43 @@ export default function SkillsSection() {
 
           <div>
             <div className={iconDivStyle}>
-              <SiFastapi className="text-black z-10" />
-              <div className={iconBgStyle} />
-            </div>
-            <span className="font-primary font-semibold">Rest API</span>
-          </div>
-
-          <div>
-            <div className={iconDivStyle}>
               <SiPhp className="text-indigo-700 z-10" />
               <div className={iconBgStyle} />
             </div>
             <span className="font-primary font-semibold">PHP</span>
           </div>
+        </div>
+      </article>
+
+      {/* DESKTOP & LOW LEVEL */}
+      <article className="text-white mb-24">
+        <h1 className="border-b w-full sm:w-fit border-blue-600 text-3xl sm:text-5xl font-primary ml-0 sm:ml-4 mb-8 pr-4 pb-1 text-center sm:text-left">
+          Desktop & Low-Level Programming
+        </h1>
+
+        <div className="text-center grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2 place-items-center lg:gap-8 w-full">
+          <div>
+            <div className={iconDivStyle}>
+              <SiRust className="text-orange-600 z-10" />
+              <div className={iconBgStyle} />
+            </div>
+            <span className="font-primary font-semibold">Rust</span>
+          </div>
 
           <div>
             <div className={iconDivStyle}>
-              <SiBlazor className="text-violet-700 z-10" />
+              <SiCplusplus className="text-blue-700 z-10" />
               <div className={iconBgStyle} />
             </div>
-            <span className="font-primary font-semibold">Blazor</span>
+            <span className="font-primary font-semibold">C/C++</span>
+          </div>
+
+          <div>
+            <div className={iconDivStyle}>
+              <SiCsharp className="text-green-600 z-10" />
+              <div className={iconBgStyle} />
+            </div>
+            <span className="font-primary font-semibold">C#</span>
           </div>
         </div>
       </article>
