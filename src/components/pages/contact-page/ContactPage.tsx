@@ -27,7 +27,7 @@ export default function ContactPage() {
               <h1 className="text-2xl font-primary font-bold">Email</h1>
               <p className="py-6">
                 
-                <Link className="link" to="mailto://russ.koprulu@gmail.com">
+                <Link className="link" to="mailto:russ.koprulu@gmail.com">
                   <span
                     data-tip="Open in mail app"
                     className="text-gray-300 underline tooltip tooltip-bottom"
