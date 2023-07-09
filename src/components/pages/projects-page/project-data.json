@@ -69,6 +69,17 @@
         },
         "languages": [
             "C#"
+        ],
+        "downloads": [
+            {
+                "title": "Chess Client",
+                "type": "Compressed .zip",
+                "name": "chess.zip",
+                "url": "/downloads/chess/chess.zip",
+                "size": "675 KB",
+                "version": "1.0",
+                "isLatest": true
+            }
         ]
     },
     {
