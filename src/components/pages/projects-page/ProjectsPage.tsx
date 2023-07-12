@@ -37,7 +37,7 @@ export default function ProjectsPage() {
       </Breadcrumb>
 
       <SearchComponent data={projectData} setData={setProjectData} />
-
+      <br />
       <ProjectCardContainer>{renderedProjectCards}</ProjectCardContainer>
     </div>
   );
