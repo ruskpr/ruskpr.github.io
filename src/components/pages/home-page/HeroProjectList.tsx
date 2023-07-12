@@ -28,7 +28,7 @@ export default function HeroProjectList() {
             animate={false}
             className={`font-secondary` + " " + linkStyles}
           >
-            <Link to="/projects/linq-sql-queries">SQL / LINQ queries</Link>
+            <Link to="/projects/sql-linq-queries">SQL / LINQ queries</Link>
           </Button>
         </li>
 
